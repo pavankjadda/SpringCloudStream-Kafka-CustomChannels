@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        greetings_input:
+          destination: greetings
+          contentType: application/json
+        greetings_output:
+          destination: greetings
+          contentType: application/json
