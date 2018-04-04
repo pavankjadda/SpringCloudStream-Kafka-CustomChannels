@@ -35,16 +35,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <dependency>
-                <!-- Import dependency management from Spring Boot -->
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
         </dependencies>
 
 
@@ -80,13 +70,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-            <version>1.0.1.RELEASE</version>
-        </dependency>
+       
+	<!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
+	<dependency>
+	    <groupId>org.springframework.kafka</groupId>
+	    <artifactId>spring-kafka</artifactId>
+	    <version>2.1.4.RELEASE</version>
+	</dependency>
 
+	<dependency>
+	  <groupId>org.xerial.snappy</groupId>
+	  <artifactId>snappy-java</artifactId>
+	  <version>1.1.7.1</version>
+	  <type>jar</type>
+	  <scope>compile</scope>
+	</dependency>
         <!-- hot reload - press Ctrl+F9 in IntelliJ after a code change while application is running -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

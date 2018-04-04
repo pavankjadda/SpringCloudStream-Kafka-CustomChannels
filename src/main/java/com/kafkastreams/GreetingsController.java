@@ -16,7 +16,8 @@ public class GreetingsController
     public void send()
     {
         String message = "Hello, Welcome to Spring Stream ";
-        Greetings greetings = Greetings.builder().message(message).timestamp(System.currentTimeMillis()).build();
+        //Greetings greetings = Greetings.builder().message(message).timestamp(System.currentTimeMillis()).build();
+        Greetings greetings=new Greetings(System.currentTimeMillis(), message);
         greetingsSender.send(greetings);
     }
 }
