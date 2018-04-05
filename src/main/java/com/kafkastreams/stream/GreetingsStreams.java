@@ -16,4 +16,5 @@ public interface GreetingsStreams
 
     @Output(OUTPUT)
     MessageChannel outgoingGreetings();
+
 }
