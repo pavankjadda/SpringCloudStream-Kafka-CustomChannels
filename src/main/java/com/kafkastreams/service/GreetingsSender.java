@@ -17,14 +17,9 @@ import org.springframework.util.MimeTypeUtils;
 @EnableAutoConfiguration
 public class GreetingsSender
 {
-    //@Autowired
-	//private  GreetingsStreams  greetingsStreams;
+    @Autowired
+	private  GreetingsStreams  greetingsStreams;
 
-    private final GreetingsStreams greetingsStreams;
-
-    public GreetingsSender(GreetingsStreams greetingsStreams) {
-        this.greetingsStreams = greetingsStreams;
-    }
     public void send(Greetings greetings)
     {
         MessageChannel messageChannel = greetingsStreams.outgoingGreetings();
