@@ -1,2 +1,2 @@
-# SpringCloudStream-KafkaStreams
-SpringCloudStream with KafkaStreams to send and receive evenets
+# SpringCloudStream-KafkaStream-EventSourcing-CQRS
+Spring Cloud Stream with KafkaStream for Event Sourcing and CQRS views
