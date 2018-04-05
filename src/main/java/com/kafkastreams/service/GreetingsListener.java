@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class GreetingsListener
 {
     @StreamListener(GreetingsStreams.INPUT)
-    public void handleGreetings(@Payload Greetings greetings)
+    public void handleGreetings(String  greetings)
     {
         log.info("Received greetings: {}", greetings);
     }
