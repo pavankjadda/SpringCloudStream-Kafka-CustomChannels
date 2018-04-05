@@ -1,5 +1,6 @@
-package com.kafkastreams.messaging;
+package com.kafkastreams.config;
 
+import com.kafkastreams.stream.GreetingsStreams;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 
 @EnableBinding(GreetingsStreams.class)

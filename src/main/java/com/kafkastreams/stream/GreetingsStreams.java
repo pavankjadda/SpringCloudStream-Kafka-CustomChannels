@@ -1,4 +1,4 @@
-package com.kafkastreams.messaging;
+package com.kafkastreams.stream;
 
 
 import org.springframework.cloud.stream.annotation.Input;
@@ -8,8 +8,8 @@ import org.springframework.messaging.SubscribableChannel;
 
 public interface GreetingsStreams
 {
-    public String INPUT = "greetings_input";
-    public String OUTPUT = "greetings_output";
+    String INPUT = "greetings-in";
+    String OUTPUT = "greetings-out";
 
     @Input(INPUT)
     SubscribableChannel incomingGreetings();
