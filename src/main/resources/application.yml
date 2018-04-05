@@ -8,6 +8,8 @@ spring:
         greetings-in:
           destination: greetings
           contentType: application/json
+          headerMode: raw
         greetings-out:
           destination: greetings
           contentType: application/json
+          headerMode: raw
