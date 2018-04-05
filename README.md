@@ -1,2 +1,2 @@
-# SpringCloudStream-KafkaStream-EventSourcing-CQRS
-Spring Cloud Stream with KafkaStream for Event Sourcing and CQRS views
+# SpringCloudStream-Kafka-CustomChannels
+Spring Cloud Stream with Kafka with custom channels. This extension of Original [Kafka](https://github.com/pavankjadda/SpringCloudStream-Kafka) project
